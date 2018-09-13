@@ -4,61 +4,86 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/background_light"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/usuarioID"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Usuario"
-        android:textColor="@android:color/background_dark"
-        android:textSize="30sp" />
+        android:layout_height="match_parent"
+        android:layout_weight="0">
 
-    =======
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/name_usuario"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="117dp"
+                android:layout_weight="0"
+                app:srcCompat="@drawable/logoss" />
 
-        android:textColor="@android:color/black"
-        android:textSize="30sp">>>>>> 676e835baa5896c9af7de99795b74583ee998014
-=======
-        android:hint="Name Usuario"
-        android:inputType="textPersonName" />
+            <TextView
+                android:id="@+id/passwordID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textColor="@android:color/background_dark"
+                android:textSize="30sp"
+                tools:text="Password" />
 
-    <TextView
-        android:id="@+id/passwordID"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@android:color/background_dark"
-        android:textSize="30sp"
-        tools:text="Password" />
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="contraseña"
+                android:inputType="textPassword"
+                android:textColor="@android:color/background_dark"
+                android:textSize="30sp" />
 
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="contraseña"
-        android:inputType="textPassword"
-        android:textColor="@android:color/background_dark"
-        android:textSize="30sp" />
+            <TextView
+                android:id="@+id/usuarioID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Usuario"
+                android:textColor="@android:color/background_dark"
+                android:textSize="30sp" />
 
-    <Button
-        android:id="@+id/ingresarID"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ingresar"
-        android:textColor="@android:color/background_dark" />
+            <EditText
+                android:id="@+id/name_usuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
 
-    <Button
-        android:id="@+id/registrarID"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="registrarse"
-        android:textColor="@android:color/background_dark" />
->>>>>>> 704bfaa76a0e7aa685ac1f28d24b69ad6e6d8563
+                android:hint="usuario"
+                android:textColor="@android:color/black"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/registrarID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="@android:color/background_dark"
+                android:text="registrarse"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/ingresarID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="@android:color/black"
+                android:text="ingresar"
+                android:textColor="@android:color/background_light" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
 </LinearLayout>
