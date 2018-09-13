@@ -15,7 +15,7 @@
         android:textColor="@android:color/background_dark"
         android:textSize="30sp" />
 
-    =======
+
 
     <EditText
         android:id="@+id/name_usuario"
@@ -24,8 +24,8 @@
         android:ems="10"
 
         android:textColor="@android:color/black"
-        android:textSize="30sp">>>>>> 676e835baa5896c9af7de99795b74583ee998014
-=======
+        android:textSize="30sp"
+
         android:hint="Name Usuario"
         android:inputType="textPersonName" />
 
@@ -60,5 +60,5 @@
         android:layout_height="wrap_content"
         android:text="registrarse"
         android:textColor="@android:color/background_dark" />
->>>>>>> 704bfaa76a0e7aa685ac1f28d24b69ad6e6d8563
+
 </LinearLayout>
