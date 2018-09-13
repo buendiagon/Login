@@ -19,7 +19,36 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
->>>>>>> 676e835baa5896c9af7de99795b74583ee998014
+
+    >>>>>> 676e835baa5896c9af7de99795b74583ee998014
+=======
+        android:hint="Name Usuario"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/passwordID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Password" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="contraseña"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/ingresarID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ingresar" />
+
+    <Button
+        android:id="@+id/registrarID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="registrarse" />
+>>>>>>> 704bfaa76a0e7aa685ac1f28d24b69ad6e6d8563
 </LinearLayout>
