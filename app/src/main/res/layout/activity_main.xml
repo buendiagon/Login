@@ -18,6 +18,32 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
+        android:hint="Name Usuario"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/passwordID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Password" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="contraseña"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/ingresarID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ingresar" />
+
+    <Button
+        android:id="@+id/registrarID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="registrarse" />
 </LinearLayout>
