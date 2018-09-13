@@ -8,17 +8,23 @@
         android:id="@+id/nombreGeneral"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nombre" />
+        android:text="Nombre"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/emailGeneral"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="correo electronico" />
+        android:text="correo electronico"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/userGeneral"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Users" />
+        android:text="Users"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp" />
 </LinearLayout>

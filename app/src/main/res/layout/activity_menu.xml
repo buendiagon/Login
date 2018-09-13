@@ -14,25 +14,33 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <Button
                 android:id="@+id/consultarID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="consultar" />
+                android:text="consultar"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/modificarID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="modificar" />
+                android:text="modificar"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/eliminarID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="eliminar" />
+                android:text="eliminar"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="24sp" />
+
         </LinearLayout>
     </ScrollView>
+
 </LinearLayout>

@@ -11,16 +11,20 @@
         android:id="@+id/usuarioID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Usuario" />
+        android:text="Usuario"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp" />
 
     =======
+
     <EditText
         android:id="@+id/name_usuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
 
-    >>>>>> 676e835baa5896c9af7de99795b74583ee998014
+        android:textColor="@android:color/black"
+        android:textSize="30sp">>>>>> 676e835baa5896c9af7de99795b74583ee998014
 =======
         android:hint="Name Usuario"
         android:inputType="textPersonName" />
@@ -29,6 +33,8 @@
         android:id="@+id/passwordID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp"
         tools:text="Password" />
 
     <EditText
@@ -37,18 +43,22 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="contraseña"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/ingresarID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ingresar" />
+        android:text="ingresar"
+        android:textColor="@android:color/background_dark" />
 
     <Button
         android:id="@+id/registrarID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="registrarse" />
+        android:text="registrarse"
+        android:textColor="@android:color/background_dark" />
 >>>>>>> 704bfaa76a0e7aa685ac1f28d24b69ad6e6d8563
 </LinearLayout>

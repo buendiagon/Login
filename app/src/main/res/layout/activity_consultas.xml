@@ -19,31 +19,41 @@
                 android:id="@+id/dcomuentoID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Dcoumento" />
+                android:text="Dcoumento"
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/nombreID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nombre" />
+                android:text="Nombre"
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/fechaID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="fecha nacimiento" />
+                android:text="fecha nacimiento"
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/emailID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="correo electronico" />
+                android:text="correo electronico"
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/userID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="User" />
+                android:text="User"
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
