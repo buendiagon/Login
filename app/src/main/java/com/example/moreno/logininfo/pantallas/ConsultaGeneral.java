@@ -7,6 +7,8 @@ import com.example.moreno.logininfo.R;
 
 public class ConsultaGeneral extends AppCompatActivity {
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
