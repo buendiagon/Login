@@ -8,6 +8,8 @@
         android:id="@+id/nombreGeneral"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_marginBottom="3dp"
         android:text="Nombre"
         android:textColor="@android:color/background_dark"
         android:textSize="24sp" />
@@ -16,6 +18,8 @@
         android:id="@+id/emailGeneral"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_marginBottom="3dp"
         android:text="correo electronico"
         android:textColor="@android:color/background_dark"
         android:textSize="24sp" />
@@ -24,6 +28,8 @@
         android:id="@+id/userGeneral"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_marginBottom="3dp"
         android:text="Users"
         android:textColor="@android:color/background_dark"
         android:textSize="24sp" />

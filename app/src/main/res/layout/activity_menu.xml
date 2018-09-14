@@ -21,22 +21,31 @@
                 android:id="@+id/consultarID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="3dp"
+                android:background="#7a97fd"
                 android:text="consultar"
-                android:textColor="@android:color/black"
+                android:textColor="@android:color/background_light"
                 android:textSize="24sp" />
 
             <Button
                 android:id="@+id/modificarID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="#7a97fd"
                 android:text="modificar"
-                android:textColor="@android:color/black"
+                android:textColor="@android:color/background_light"
                 android:textSize="24sp" />
 
             <Button
                 android:id="@+id/eliminarID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="#7a97fd"
                 android:text="eliminar"
                 android:textColor="@android:color/holo_red_dark"
                 android:textSize="24sp" />

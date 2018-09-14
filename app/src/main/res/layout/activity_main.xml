@@ -16,87 +16,81 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
-
-
 
 
             <ImageView
                 android:id="@+id/imageView5"
                 android:layout_width="match_parent"
                 android:layout_height="117dp"
-                android:layout_weight="0"
+                android:layout_weight="1"
                 app:srcCompat="@drawable/logoss" />
 
-
-            <TextView
-                android:id="@+id/passwordID"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:textColor="@android:color/background_dark"
-                android:textSize="30sp"
-                tools:text="Password" />
-
-        android:textColor="@android:color/black"
-        android:textSize="30sp"
-
-        android:hint="Name Usuario"
-        android:inputType="textPersonName" />
-
-
-            <EditText
-                android:id="@+id/editText2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="contraseña"
-                android:inputType="textPassword"
-                android:textColor="@android:color/background_dark"
-                android:textSize="30sp" />
 
             <TextView
                 android:id="@+id/usuarioID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="Usuario"
                 android:textColor="@android:color/background_dark"
-                android:textSize="30sp" />
+
+                android:textSize="36sp" />
+
+
 
             <EditText
                 android:id="@+id/name_usuario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
+                android:layout_weight="1"
 
+                android:ems="10"
                 android:hint="usuario"
                 android:textColor="@android:color/black"
-                android:textSize="30sp" />
+                android:textSize="24sp" />
 
-            <Button
+            <TextView
+                android:id="@+id/passwordID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Password"
+                android:textColor="@android:color/black"
+                android:textSize="36sp" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="contraseña"
+                android:inputType="textPassword"
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp" />
+
+            <ImageView
                 android:id="@+id/registrarID"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="3dp"
-                android:layout_marginBottom="3dp"
-                android:background="@android:color/background_dark"
-                android:text="registrarse"
-                android:textColor="@android:color/background_light" />
+                android:layout_height="69dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1.4"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/ingre" />
 
-            <Button
-                android:id="@+id/ingresarID"
+            <ImageView
+                android:id="@+id/imageView7"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="3dp"
-                android:layout_marginBottom="3dp"
-                android:background="@android:color/black"
-                android:text="ingresar"
-                android:textColor="@android:color/background_light" />
+                android:layout_height="73dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/ingresar" />
 
         </LinearLayout>
     </ScrollView>
-
 
 
 
@@ -106,6 +100,7 @@
         android:layout_height="wrap_content"
         android:text="registrarse"
         android:textColor="@android:color/background_dark" />
+
 
 
 </LinearLayout>
