@@ -48,7 +48,6 @@
 
                 android:layout_weight="1"
                 android:ems="10"
-                android:hint="usuario"
                 android:textColor="@android:color/black"
                 android:textSize="24sp" />
 
@@ -75,15 +74,6 @@
                 android:textSize="24sp" />
 
             <ImageView
-                android:id="@+id/registrarID"
-                android:layout_width="364dp"
-                android:layout_height="62dp"
-                android:layout_margin="8dp"
-                android:layout_weight="1.4"
-                android:scaleType="fitXY"
-                app:srcCompat="@drawable/registrarse" />
-
-            <ImageView
                 android:id="@+id/ingresarID"
                 android:layout_width="368dp"
                 android:layout_height="59dp"
@@ -91,6 +81,15 @@
                 android:layout_weight="1"
                 android:scaleType="fitXY"
                 app:srcCompat="@drawable/ingresar" />
+
+            <ImageView
+                android:id="@+id/registrarID"
+                android:layout_width="364dp"
+                android:layout_height="62dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1.4"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/registrarse" />
 
         </LinearLayout>
     </ScrollView>
