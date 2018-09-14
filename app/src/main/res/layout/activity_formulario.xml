@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".pantallas.Formulario">
 
     <ScrollView
@@ -51,7 +52,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName" />
+                android:inputType="number" />
 
             <TextView
                 android:id="@+id/textView4"
@@ -69,7 +70,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName" />
+                android:inputType="datetime" />
 
             <TextView
                 android:id="@+id/textView5"
@@ -85,7 +86,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName" />
+                android:inputType="textEmailAddress" />
 
             <TextView
                 android:id="@+id/textView6"
@@ -113,11 +114,17 @@
                 android:textSize="24sp" />
 
             <EditText
-                android:id="@+id/passwordID"
+                android:id="@+id/passwordFor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName" />
+
+            <ImageView
+                android:id="@+id/registrarFor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/registrarse" />
 
         </LinearLayout>
     </ScrollView>

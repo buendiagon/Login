@@ -34,18 +34,9 @@ ArrayList<usuario>listaU;
         usuarioMai=findViewById(R.id.usuarioMain);
         passwordMai=findViewById(R.id.passwordMain);
         ingresarMai=findViewById(R.id.ingresarID);
-        resgistrarMai=findViewById(R.id.registrarID);BaseDatos baseDatos=new BaseDatos(MainActivity.this,"baseDatos",null,1);
+        resgistrarMai=findViewById(R.id.registrarID);
 
-        for (int i=0;i<=60;i++){
-            ContentValues registro=new ContentValues();
-            registro.put("documento",String.valueOf(i));
-            registro.put("nombre","Zapata");
-            registro.put("fecha","02-03-98");
-            registro.put("email","adasd@hotmail.com");
-            registro.put("user","zapa"+String.valueOf(i));
-            registro.put("password","asdad");
-            baseDatos.insertar(MainActivity.this,registro);
-        }
+
 
         listaU=new ArrayList<>();
             ingresarMai.setOnClickListener(new View.OnClickListener() {
@@ -67,9 +58,6 @@ ArrayList<usuario>listaU;
                                     Toast.makeText(getApplicationContext(), "Contraseña no valida", Toast.LENGTH_SHORT).show();
                                 }
                             }
-
-
-
 
                 }
             });

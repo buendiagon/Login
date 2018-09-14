@@ -28,16 +28,7 @@ Adaptadores_java adaptadores_java;
         recyclerView=findViewById(R.id.contenedor);
         BaseDatos baseDatos=new BaseDatos(ConsultaGeneral.this,"baseDatos",null,1);
 
-            for (int i=0;i<=60;i++){
-                ContentValues registro=new ContentValues();
-                registro.put("documento",String.valueOf(i));
-                registro.put("nombre","Zapata");
-                registro.put("fecha","02-03-98");
-                registro.put("email","adasd@hotmail.com");
-                registro.put("user","zapa"+String.valueOf(i));
-                registro.put("password","asdad");
-                baseDatos.insertar(ConsultaGeneral.this,registro);
-            }
+
         baseDatos.consultaGeneral(ConsultaGeneral.this,lista);
         adaptadores_java=new Adaptadores_java(lista);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
