@@ -33,17 +33,32 @@ public class BaseDatos extends SQLiteOpenHelper{
 
     //crear 5 metodos
 
-    public  void insertar(Context context,ContentValues registro){
+    public int insertar(Context context,ContentValues registro){
         BaseDatos baseDatos= new BaseDatos(context,"baseDatos",null, 1);
         SQLiteDatabase db = baseDatos.getWritableDatabase();
-        db.insert("tb_usuarios",null, registro);
+        long exito;
+        exito=db.insert("tb_usuarios",null, registro);
+        if(exito==-1){
+            return 0;
+        }
+        else {
+            return 1;
+        }
 
     }
 
-    public  void modificar(Context context,ContentValues registro,String id){
+    public int modificar(Context context,ContentValues registro,String id){
         BaseDatos baseDatos= new BaseDatos(context,"baseDatos",null, 1);
         SQLiteDatabase db = baseDatos.getWritableDatabase();
-        db.update("tb_usuarios",registro,"documento="+id,null);
+        int exito;
+        exito=db.update("tb_usuarios",registro,"documento="+id,null);
+        if(exito==1){
+            Toast.makeText(context, "bien", Toast.LENGTH_SHORT).show();
+            return 1;
+        }else {
+            Toast.makeText(context, "mal", Toast.LENGTH_SHORT).show();
+            return 0;
+        }
     }
 
     public  void eliminar(Context context,String id){

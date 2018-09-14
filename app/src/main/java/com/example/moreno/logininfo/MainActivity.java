@@ -15,6 +15,7 @@ import android.widget.Toast;
 import com.example.moreno.logininfo.Base_Datos.BaseDatos;
 import com.example.moreno.logininfo.Entidades.usuario;
 import com.example.moreno.logininfo.pantallas.ConsultaGeneral;
+import com.example.moreno.logininfo.pantallas.Formulario;
 import com.example.moreno.logininfo.pantallas.MenuMain;
 
 import java.util.ArrayList;
@@ -33,18 +34,9 @@ ArrayList<usuario>listaU;
         usuarioMai=findViewById(R.id.usuarioMain);
         passwordMai=findViewById(R.id.passwordMain);
         ingresarMai=findViewById(R.id.ingresarID);
-        resgistrarMai=findViewById(R.id.registrarID);BaseDatos baseDatos=new BaseDatos(MainActivity.this,"baseDatos",null,1);
+        resgistrarMai=findViewById(R.id.registrarID);
 
-        for (int i=0;i<=60;i++){
-            ContentValues registro=new ContentValues();
-            registro.put("documento",String.valueOf(i));
-            registro.put("nombre","Zapata");
-            registro.put("fecha","02-03-98");
-            registro.put("email","adasd@hotmail.com");
-            registro.put("user","zapa"+String.valueOf(i));
-            registro.put("password","asdad");
-            baseDatos.insertar(MainActivity.this,registro);
-        }
+
 
         listaU=new ArrayList<>();
             ingresarMai.setOnClickListener(new View.OnClickListener() {
@@ -67,9 +59,16 @@ ArrayList<usuario>listaU;
                                 }
                             }
 
+                }
+            });
 
+            resgistrarMai.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                 //   BaseDatos baseMain = new BaseDatos(MainActivity.this,"baseDatos",null,1);
 
-
+                    Intent formulari = new Intent(MainActivity.this, Formulario.class);
+                    startActivity(formulari);
                 }
             });
 
