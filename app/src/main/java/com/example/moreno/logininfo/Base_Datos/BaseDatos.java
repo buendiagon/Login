@@ -34,10 +34,10 @@ public class BaseDatos extends SQLiteOpenHelper{
 
     }
 
-    public  void modificar(Context context){
+    public  void modificar(Context context,ContentValues registro,String id){
         BaseDatos baseDatos= new BaseDatos(context,"baseDatos",null, 1);
         SQLiteDatabase db = baseDatos.getWritableDatabase();
-        
+        db.update("tb_usuarios",registro,"documento="+id,null);
     }
 
     public  void eliminar(){
