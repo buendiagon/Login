@@ -17,38 +17,23 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <Button
+            <ImageView
                 android:id="@+id/consultarID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:layout_marginBottom="3dp"
-                android:background="#7a97fd"
-                android:text="consultar"
-                android:textColor="@android:color/background_light"
-                android:textSize="24sp" />
+                app:srcCompat="@drawable/consultar" />
 
-            <Button
+            <ImageView
                 android:id="@+id/modificarID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="3dp"
-                android:layout_marginBottom="3dp"
-                android:background="#7a97fd"
-                android:text="modificar"
-                android:textColor="@android:color/background_light"
-                android:textSize="24sp" />
+                app:srcCompat="@drawable/modificar" />
 
-            <Button
+            <ImageView
                 android:id="@+id/eliminarID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="3dp"
-                android:layout_marginBottom="3dp"
-                android:background="#7a97fd"
-                android:text="eliminar"
-                android:textColor="@android:color/holo_red_dark"
-                android:textSize="24sp" />
+                app:srcCompat="@drawable/eliminar" />
 
         </LinearLayout>
     </ScrollView>
