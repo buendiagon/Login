@@ -2,8 +2,13 @@ package com.example.moreno.logininfo.Base_Datos;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+
+import com.example.moreno.logininfo.Entidades.usuario;
+
+import java.util.ArrayList;
 
 public class BaseDatos extends SQLiteOpenHelper{
 
@@ -14,14 +19,14 @@ public class BaseDatos extends SQLiteOpenHelper{
     @Override
     public void onCreate(SQLiteDatabase db) {
 
-        db.execSQL("create table tb_usuarios(documento Integer Primary key,nombre text,fecha text,email,text,user text)");
+        db.execSQL("create table tb_usuarios(documento Integer Primary key,nombre text,fecha text,email text,user text,password text)");
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
 
         db.execSQL("drop table if exists tb_usuarios");
-        db.execSQL("create table tb_usuarios(documento Integer Primary key,nombre text,fecha text,email,text,user text)");
+        db.execSQL("create table tb_usuarios(documento Integer Primary key,nombre text,fecha text,email text,user text,password text)");
 
     }
 
@@ -40,16 +45,39 @@ public class BaseDatos extends SQLiteOpenHelper{
         db.update("tb_usuarios",registro,"documento="+id,null);
     }
 
-    public  void eliminar(){
-
+    public  void eliminar(Context context,String id){
+        BaseDatos baseDatos= new BaseDatos(context,"baseDatos",null, 1);
+        SQLiteDatabase db = baseDatos.getWritableDatabase();
+        db.delete("tb_usuarios","documento="+id,null);
     }
 
-    public  void consulta(){
 
+    ArrayList<usuario>lista;
+
+    public  void consulta(Context context,String id,ArrayList<usuario>lista){
+        this.lista=lista;
+        BaseDatos baseDatos= new BaseDatos(context,"baseDatos",null, 1);
+        SQLiteDatabase db = baseDatos.getWritableDatabase();
+        Cursor cursor = db.rawQuery("select * from tb_usuarios where documento="+id,null);
+
+        if (cursor.moveToFirst()){
+            lista.add(new usuario(cursor.getString(0),cursor.getString(1),cursor.getString(2),cursor.getString(3),cursor.getString(4),cursor.getString(5)));
+        }
+        cursor.close();
     }
 
-    public  void insertarGeneral(){
+    ArrayList<usuario>lista1;
 
+    public  void consultaGeneral(Context context,ArrayList<usuario>lista1){
+        this.lista1=lista1;
+        BaseDatos baseDatos= new BaseDatos(context,"baseDatos",null, 1);
+        SQLiteDatabase db = baseDatos.getWritableDatabase();
+        Cursor cursor = db.rawQuery("select * from tb_usuarios ",null);
+
+        if (cursor.moveToFirst()){
+            lista.add(new usuario(cursor.getString(0),cursor.getString(1),cursor.getString(2),cursor.getString(3),cursor.getString(4),cursor.getString(5)));
+        }
+        cursor.close();
     }
 
 
