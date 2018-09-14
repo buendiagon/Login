@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/background_light"
     android:orientation="vertical">
 
     <TextView
@@ -10,9 +13,12 @@
         android:layout_height="wrap_content"
         android:layout_margin="3dp"
         android:layout_marginBottom="3dp"
+        android:focusableInTouchMode="false"
         android:text="Nombre"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@android:color/background_dark"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        app:fontFamily="sans-serif" />
 
     <TextView
         android:id="@+id/emailGeneral"
@@ -28,8 +34,10 @@
         android:id="@+id/userGeneral"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="3dp"
-        android:layout_marginBottom="3dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="3dp"
         android:text="Users"
         android:textColor="@android:color/background_dark"
         android:textSize="24sp" />
