@@ -15,6 +15,7 @@ import android.widget.Toast;
 import com.example.moreno.logininfo.Base_Datos.BaseDatos;
 import com.example.moreno.logininfo.Entidades.usuario;
 import com.example.moreno.logininfo.pantallas.ConsultaGeneral;
+import com.example.moreno.logininfo.pantallas.Formulario;
 import com.example.moreno.logininfo.pantallas.MenuMain;
 
 import java.util.ArrayList;
@@ -70,6 +71,16 @@ ArrayList<usuario>listaU;
 
 
 
+                }
+            });
+
+            resgistrarMai.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                 //   BaseDatos baseMain = new BaseDatos(MainActivity.this,"baseDatos",null,1);
+
+                    Intent formulari = new Intent(MainActivity.this, Formulario.class);
+                    startActivity(formulari);
                 }
             });
 
