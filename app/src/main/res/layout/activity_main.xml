@@ -41,13 +41,14 @@
 
 
             <EditText
-                android:id="@+id/name_usuario"
+                android:id="@+id/usuarioMain"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="6dp"
 
                 android:layout_weight="1"
                 android:ems="10"
+                android:hint="user"
                 android:textColor="@android:color/black"
                 android:textSize="24sp" />
 
@@ -62,7 +63,7 @@
                 android:textSize="36sp" />
 
             <EditText
-                android:id="@+id/editText2"
+                android:id="@+id/passwordMain"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="6dp"

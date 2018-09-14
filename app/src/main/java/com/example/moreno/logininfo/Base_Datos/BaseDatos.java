@@ -81,6 +81,20 @@ public class BaseDatos extends SQLiteOpenHelper{
         db.close();
     }
 
+    ArrayList<usuario>lista3;
+
+    public  void consultaUser(Context context,String user,ArrayList<usuario>lista3){
+        this.lista3=lista3;
+        BaseDatos baseDatos= new BaseDatos(context,"baseDatos",null, 1);
+        SQLiteDatabase db = baseDatos.getWritableDatabase();
+        Cursor cursor = db.rawQuery("select * from tb_usuarios ",null);
+
+      while (cursor.moveToNext()){
+            lista3.add(new usuario(cursor.getString(0),cursor.getString(1),cursor.getString(2),cursor.getString(3),cursor.getString(4),cursor.getString(5)));
+        }
+        cursor.close();
+      db.close();
+    }
 
 
 }
