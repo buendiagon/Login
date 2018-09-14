@@ -13,14 +13,14 @@
         android:layout_height="match_parent"
         android:layout_weight="0">
 
-<<<<<<< HEAD
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-=======
 
->>>>>>> 9b5f494e0b2d59ba7f8da00bdab31c9c7685d20e
+
+
 
             <ImageView
                 android:id="@+id/imageView5"
@@ -29,7 +29,7 @@
                 android:layout_weight="0"
                 app:srcCompat="@drawable/logoss" />
 
-<<<<<<< HEAD
+
             <TextView
                 android:id="@+id/passwordID"
                 android:layout_width="match_parent"
@@ -38,13 +38,13 @@
                 android:textColor="@android:color/background_dark"
                 android:textSize="30sp"
                 tools:text="Password" />
-=======
+
         android:textColor="@android:color/black"
         android:textSize="30sp"
 
         android:hint="Name Usuario"
         android:inputType="textPersonName" />
->>>>>>> 9b5f494e0b2d59ba7f8da00bdab31c9c7685d20e
+
 
             <EditText
                 android:id="@+id/editText2"
@@ -98,8 +98,8 @@
     </ScrollView>
 
 
-<<<<<<< HEAD
-=======
+
+
     <Button
         android:id="@+id/registrarID"
         android:layout_width="match_parent"
@@ -107,5 +107,5 @@
         android:text="registrarse"
         android:textColor="@android:color/background_dark" />
 
->>>>>>> 9b5f494e0b2d59ba7f8da00bdab31c9c7685d20e
+
 </LinearLayout>
