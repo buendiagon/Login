@@ -13,6 +13,7 @@
         android:layout_height="match_parent"
         android:layout_weight="0">
 
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -26,6 +27,7 @@
                 android:layout_weight="1"
                 app:srcCompat="@drawable/logoss" />
 
+
             <TextView
                 android:id="@+id/usuarioID"
                 android:layout_width="match_parent"
@@ -33,7 +35,10 @@
                 android:layout_weight="1"
                 android:text="Usuario"
                 android:textColor="@android:color/background_dark"
+
                 android:textSize="36sp" />
+
+
 
             <EditText
                 android:id="@+id/name_usuario"
@@ -86,6 +91,16 @@
 
         </LinearLayout>
     </ScrollView>
+
+
+
+    <Button
+        android:id="@+id/registrarID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="registrarse"
+        android:textColor="@android:color/background_dark" />
+
 
 
 </LinearLayout>

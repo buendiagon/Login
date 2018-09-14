@@ -4,13 +4,13 @@ import java.util.Date;
 
 public class usuario {
 
-    private Integer documento;
+    private String documento;
     private String nombre;
-    private Date fecha;
+    private String  fecha;
     private String email;
     private String user;
 
-    public usuario(Integer documento, String nombre, Date fecha, String email, String user) {
+    public usuario(String documento, String nombre, String fecha, String email, String user) {
         this.documento = documento;
         this.nombre = nombre;
         this.fecha = fecha;
@@ -18,11 +18,11 @@ public class usuario {
         this.user = user;
     }
 
-    public Integer getDocumento() {
+    public String getDocumento() {
         return documento;
     }
 
-    public void setDocumento(Integer documento) {
+    public void setDocumento(String documento) {
         this.documento = documento;
     }
 
@@ -34,11 +34,11 @@ public class usuario {
         this.nombre = nombre;
     }
 
-    public Date getFecha() {
+    public String getFecha() {
         return fecha;
     }
 
-    public void setFecha(Date fecha) {
+    public void setFecha(String fecha) {
         this.fecha = fecha;
     }
 
