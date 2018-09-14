@@ -32,20 +32,21 @@
                 android:id="@+id/usuarioID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="6dp"
                 android:layout_weight="1"
                 android:text="Usuario"
+
                 android:textColor="@android:color/background_dark"
-
                 android:textSize="36sp" />
-
 
 
             <EditText
                 android:id="@+id/name_usuario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_margin="6dp"
 
+                android:layout_weight="1"
                 android:ems="10"
                 android:hint="usuario"
                 android:textColor="@android:color/black"
@@ -55,6 +56,7 @@
                 android:id="@+id/passwordID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="6dp"
                 android:layout_weight="1"
                 android:text="Password"
                 android:textColor="@android:color/black"
@@ -64,6 +66,7 @@
                 android:id="@+id/editText2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="6dp"
                 android:layout_weight="1"
                 android:ems="10"
                 android:hint="contraseña"
