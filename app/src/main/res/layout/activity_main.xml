@@ -34,10 +34,13 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="6dp"
                 android:layout_weight="1"
-                android:text="Usuario"
+                android:focusableInTouchMode="false"
 
+                android:text="Usuario"
                 android:textColor="@android:color/background_dark"
-                android:textSize="36sp" />
+                android:textSize="36sp"
+                app:fontFamily="@font/keania_one"
+                tools:fontFamily="casual" />
 
 
             <EditText
