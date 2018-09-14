@@ -19,14 +19,14 @@ public class BaseDatos extends SQLiteOpenHelper{
     @Override
     public void onCreate(SQLiteDatabase db) {
 
-        db.execSQL("create table tb_usuarios(documento Integer Primary key,nombre text,fecha text,email text,user text,password text)");
+        db.execSQL("create table tb_usuarios(documento integer Primary key,nombre text,fecha text,email text,user text,password text)");
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
 
         db.execSQL("drop table if exists tb_usuarios");
-        db.execSQL("create table tb_usuarios(documento Integer Primary key,nombre text,fecha text,email text,user text,password text)");
+        db.execSQL("create table tb_usuarios(documento integer Primary key,nombre text,fecha text,email text,user text,password text)");
 
     }
 
@@ -72,12 +72,13 @@ public class BaseDatos extends SQLiteOpenHelper{
         this.lista1=lista1;
         BaseDatos baseDatos= new BaseDatos(context,"baseDatos",null, 1);
         SQLiteDatabase db = baseDatos.getWritableDatabase();
-        Cursor cursor = db.rawQuery("select * from tb_usuarios ",null);
+        Cursor cursor = db.rawQuery("select * from tb_usuarios",null);
 
-        if (cursor.moveToFirst()){
-            lista.add(new usuario(cursor.getString(0),cursor.getString(1),cursor.getString(2),cursor.getString(3),cursor.getString(4),cursor.getString(5)));
+        while(cursor.moveToNext()){
+            lista1.add(new usuario(cursor.getString(0),cursor.getString(1),cursor.getString(2),cursor.getString(3),cursor.getString(4),cursor.getString(5)));
         }
         cursor.close();
+        db.close();
     }
 
 
