@@ -9,13 +9,23 @@ public class usuario {
     private String  fecha;
     private String email;
     private String user;
+    private  String password;
 
-    public usuario(String documento, String nombre, String fecha, String email, String user) {
+    public usuario(String documento, String nombre, String fecha, String email, String user, String password) {
         this.documento = documento;
         this.nombre = nombre;
         this.fecha = fecha;
         this.email = email;
         this.user = user;
+        this.password = password;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public String getDocumento() {
