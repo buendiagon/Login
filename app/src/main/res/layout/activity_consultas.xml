@@ -19,6 +19,8 @@
                 android:id="@+id/dcomuentoID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="3dp"
                 android:text="Dcoumento"
                 android:textColor="@android:color/background_dark"
                 android:textSize="24sp" />
@@ -27,6 +29,8 @@
                 android:id="@+id/nombreID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="3dp"
                 android:text="Nombre"
                 android:textColor="@android:color/background_dark"
                 android:textSize="24sp" />
@@ -35,6 +39,8 @@
                 android:id="@+id/fechaID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="3dp"
                 android:text="fecha nacimiento"
                 android:textColor="@android:color/background_dark"
                 android:textSize="24sp" />
@@ -43,6 +49,8 @@
                 android:id="@+id/emailID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="3dp"
                 android:text="correo electronico"
                 android:textColor="@android:color/background_dark"
                 android:textSize="24sp" />
@@ -51,6 +59,8 @@
                 android:id="@+id/userID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="3dp"
                 android:text="User"
                 android:textColor="@android:color/background_dark"
                 android:textSize="24sp" />
