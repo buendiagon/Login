@@ -34,7 +34,7 @@ Adaptadores_java adaptadores_java;
                 registro.put("nombre","Zapata");
                 registro.put("fecha","02-03-98");
                 registro.put("email","adasd@hotmail.com");
-                registro.put("user","zapa");
+                registro.put("user","zapa"+String.valueOf(i));
                 registro.put("password","asdad");
                 baseDatos.insertar(ConsultaGeneral.this,registro);
             }

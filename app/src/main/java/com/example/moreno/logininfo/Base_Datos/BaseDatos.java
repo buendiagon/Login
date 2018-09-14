@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.widget.Toast;
 
 import com.example.moreno.logininfo.Entidades.usuario;
 
@@ -83,16 +84,28 @@ public class BaseDatos extends SQLiteOpenHelper{
 
     ArrayList<usuario>lista3;
 
-    public  void consultaUser(Context context,String user,ArrayList<usuario>lista3){
+    public  void consultaUser(Context context,String id,ArrayList<usuario>lista3){
         this.lista3=lista3;
         BaseDatos baseDatos= new BaseDatos(context,"baseDatos",null, 1);
         SQLiteDatabase db = baseDatos.getWritableDatabase();
-        Cursor cursor = db.rawQuery("select * from tb_usuarios ",null);
 
-      while (cursor.moveToNext()){
-            lista3.add(new usuario(cursor.getString(0),cursor.getString(1),cursor.getString(2),cursor.getString(3),cursor.getString(4),cursor.getString(5)));
+        try{
+            Cursor cursor = db.rawQuery("select * from tb_usuarios where user="+"'"+id+"'",null);
+            while (cursor.moveToNext()){
+
+                lista3.add(new usuario(cursor.getString(0),cursor.getString(1),cursor.getString(2),cursor.getString(3),cursor.getString(4),cursor.getString(5)));
+            }
+            cursor.close();
+        }catch (Exception z){
+            Toast.makeText(context, "Este usuario no existe", Toast.LENGTH_SHORT).show();
         }
-        cursor.close();
+
+
+
+
+
+
+
       db.close();
     }
 

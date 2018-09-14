@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 import com.example.moreno.logininfo.R;
 
-public class Menu extends AppCompatActivity {
+public class MenuMain extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

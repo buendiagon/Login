@@ -16,7 +16,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".pantallas.Menu" />
+        <activity android:name=".pantallas.MenuMain" />
         <activity android:name=".pantallas.Consultas" />
         <activity android:name=".pantallas.Formulario" />
         <activity android:name=".pantallas.ConsultaGeneral">
