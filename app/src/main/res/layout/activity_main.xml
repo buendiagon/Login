@@ -35,6 +35,7 @@
                 android:layout_weight="0"
                 android:editable="true"
                 android:ems="10"
+                android:fontFamily="@"
                 android:hint="Password"
                 android:includeFontPadding="true"
                 android:inputType="textPassword"
@@ -92,7 +93,7 @@
                 android:clickable="true"
                 android:drawableBottom="@color/colorPrimaryDark"
                 android:text="Deseo registrarme"
-                android:textColor="@color/colorPrimaryDark" />
+                android:textColor="@color/colorPrimaryDark"/>
 
         </LinearLayout>
     </ScrollView>
