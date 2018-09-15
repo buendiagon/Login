@@ -51,7 +51,7 @@ public class BaseDatos extends SQLiteOpenHelper{
         BaseDatos baseDatos= new BaseDatos(context,"baseDatos",null, 1);
         SQLiteDatabase db = baseDatos.getWritableDatabase();
         int exito;
-        exito=db.update("tb_usuarios",registro,"user="+user,null);
+        exito=db.update("tb_usuarios",registro,"user="+"'"+user+"'",null);
         if(exito==1){
             Toast.makeText(context, "bien", Toast.LENGTH_SHORT).show();
             return 1;
@@ -64,7 +64,7 @@ public class BaseDatos extends SQLiteOpenHelper{
     public  void eliminar(Context context,String user){
         BaseDatos baseDatos= new BaseDatos(context,"baseDatos",null, 1);
         SQLiteDatabase db = baseDatos.getWritableDatabase();
-        db.delete("tb_usuarios","user="+user,null);
+        db.delete("tb_usuarios","user="+"'"+user+"'",null);
     }
 
 

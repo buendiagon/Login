@@ -19,13 +19,13 @@
         <activity android:name=".pantallas.MenuMain" />
         <activity android:name=".pantallas.Consultas" />
         <activity android:name=".pantallas.Formulario" />
-        <activity android:name=".pantallas.ConsultaGeneral">
-
-        </activity>
+        <activity android:name=".pantallas.ConsultaGeneral"></activity>
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".pantallas.ModificarUsuario"></activity>
     </application>
 
 </manifest>
