@@ -47,11 +47,11 @@ public class BaseDatos extends SQLiteOpenHelper{
 
     }
 
-    public int modificar(Context context,ContentValues registro,String id){
+    public int modificar(Context context,ContentValues registro,String user){
         BaseDatos baseDatos= new BaseDatos(context,"baseDatos",null, 1);
         SQLiteDatabase db = baseDatos.getWritableDatabase();
         int exito;
-        exito=db.update("tb_usuarios",registro,"documento="+id,null);
+        exito=db.update("tb_usuarios",registro,"user="+user,null);
         if(exito==1){
             Toast.makeText(context, "bien", Toast.LENGTH_SHORT).show();
             return 1;
@@ -61,26 +61,26 @@ public class BaseDatos extends SQLiteOpenHelper{
         }
     }
 
-    public  void eliminar(Context context,String id){
+    public  void eliminar(Context context,String user){
         BaseDatos baseDatos= new BaseDatos(context,"baseDatos",null, 1);
         SQLiteDatabase db = baseDatos.getWritableDatabase();
-        db.delete("tb_usuarios","documento="+id,null);
+        db.delete("tb_usuarios","user="+user,null);
     }
 
 
-    ArrayList<usuario>lista;
-
-    public  void consulta(Context context,String id,ArrayList<usuario>lista){
-        this.lista=lista;
-        BaseDatos baseDatos= new BaseDatos(context,"baseDatos",null, 1);
-        SQLiteDatabase db = baseDatos.getWritableDatabase();
-        Cursor cursor = db.rawQuery("select * from tb_usuarios where documento="+id,null);
-
-        if (cursor.moveToFirst()){
-            lista.add(new usuario(cursor.getString(0),cursor.getString(1),cursor.getString(2),cursor.getString(3),cursor.getString(4),cursor.getString(5)));
-        }
-        cursor.close();
-    }
+//    ArrayList<usuario>lista;
+//
+//    public  void consulta(Context context,String id,ArrayList<usuario>lista){
+//        this.lista=lista;
+//        BaseDatos baseDatos= new BaseDatos(context,"baseDatos",null, 1);
+//        SQLiteDatabase db = baseDatos.getWritableDatabase();
+//        Cursor cursor = db.rawQuery("select * from tb_usuarios where documento="+id,null);
+//
+//        if (cursor.moveToFirst()){
+//            lista.add(new usuario(cursor.getString(0),cursor.getString(1),cursor.getString(2),cursor.getString(3),cursor.getString(4),cursor.getString(5)));
+//        }
+//        cursor.close();
+//    }
 
     ArrayList<usuario>lista1;
 

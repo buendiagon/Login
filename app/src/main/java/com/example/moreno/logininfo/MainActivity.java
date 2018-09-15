@@ -52,6 +52,7 @@ ArrayList<usuario>listaU;
                             } else{
                                 if(passwordMai.getText().toString().equals(listaU.get(0).getPassword())){
                                     Intent menuu = new Intent(MainActivity.this, MenuMain.class);
+                                    menuu.putExtra("user",usuarioMai.getText().toString());
                                     startActivity(menuu);
                                 }
                                 else{
