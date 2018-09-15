@@ -35,7 +35,7 @@ public class Consultas extends AppCompatActivity {
         fecha.setText(listaC.get(0).getFecha());
         correo.setText(listaC.get(0).getEmail());
         user.setText(listaC.get(0).getUser());
-        
+
 
 
 
