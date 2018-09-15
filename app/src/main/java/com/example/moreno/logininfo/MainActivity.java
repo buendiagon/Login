@@ -55,6 +55,7 @@ ArrayList<usuario>listaU;
                                     Intent menuu = new Intent(MainActivity.this, MenuMain.class);
                                     menuu.putExtra("user",usuarioMai.getText().toString());
                                     startActivity(menuu);
+                                    finish();
                                 }
                                 else{
                                     Toast.makeText(getApplicationContext(), "Contraseña no valida", Toast.LENGTH_SHORT).show();
@@ -71,6 +72,7 @@ ArrayList<usuario>listaU;
 
                     Intent formulari = new Intent(MainActivity.this, Formulario.class);
                     startActivity(formulari);
+                    finish();
                 }
             });
 
