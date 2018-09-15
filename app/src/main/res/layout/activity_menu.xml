@@ -15,32 +15,51 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginBottom="20dp"
             android:gravity="center"
-            android:orientation="vertical">
-
-            <Button
-                android:id="@+id/consultarID"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="consultar" />
+            android:orientation="vertical"
+            android:padding="10dp">
 
             <Button
                 android:id="@+id/modificarID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="modificar" />
+                android:layout_margin="5dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="modificar"
+                android:textColor="@android:color/background_light"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/consultarID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="consultar"
+                android:textColor="@android:color/background_light"
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/generalID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="general" />
+                android:layout_margin="5dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="general"
+                android:textColor="@android:color/background_light"
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/eliminarID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="eliminar" />
+                android:layout_margin="5dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="eliminar"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="24sp" />
 
         </LinearLayout>
     </ScrollView>
