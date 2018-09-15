@@ -27,7 +27,7 @@ public class ModificarUsuario extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_modificar_usuario);
-        usuari=getIntent().getStringExtra("user");
+        usuari=getIntent().getStringExtra("user"); //intent.putExtra("user",usuari);
         nombre=findViewById(R.id.nombreConsulta);
         fecha=findViewById(R.id.fechaConsulta);
         email=findViewById(R.id.emailConsulta);
