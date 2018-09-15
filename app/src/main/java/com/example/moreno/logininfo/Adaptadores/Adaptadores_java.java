@@ -25,7 +25,7 @@ ArrayList<usuario>lista;
     @NonNull
     @Override
     public Adaptadores_java.listViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        View view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_list,null,false);
+        View view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_list,viewGroup,false);
         return new listViewHolder(view);
     }
 
