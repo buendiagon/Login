@@ -15,33 +15,35 @@
 
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="100dp"
+            android:visibility="visible">
 
 
-            <ImageView
-                android:id="@+id/imageView5"
-                android:layout_width="match_parent"
-                android:layout_height="117dp"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/loginn" />
-
-
-            <TextView
-                android:id="@+id/usuarioID"
+            <EditText
+                android:id="@+id/passwordMain"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="6dp"
-                android:layout_weight="1"
-                android:focusableInTouchMode="false"
-
-                android:text="Usuario"
+                android:layout_weight="0"
+                android:editable="true"
+                android:ems="10"
+                android:hint="Password"
+                android:includeFontPadding="true"
+                android:inputType="textPassword"
+                android:singleLine="false"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat"
                 android:textColor="@android:color/background_dark"
                 android:textSize="36sp"
-                app:fontFamily="@font/keania_one"
-                tools:fontFamily="casual" />
-
+                android:textStyle="normal" />
 
             <EditText
                 android:id="@+id/usuarioMain"
@@ -49,54 +51,59 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="6dp"
 
+                android:layout_marginBottom="100dp"
                 android:layout_weight="1"
                 android:ems="10"
-                android:hint="user"
-                android:textColor="@android:color/black"
-                android:textSize="24sp" />
+                android:hint="Usuarios"
+                android:inputType="text"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            <LinearLayout
+                android:layout_width="347dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:duplicateParentState="false"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/ingresarID"
+                    android:layout_width="80dp"
+                    android:layout_height="37dp"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_weight="1"
+                    android:width="40dp"
+                    android:height="40dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:baselineAligned="false"
+                    android:focusableInTouchMode="false"
+                    android:text="Iniciar sesión"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="18sp" />
+            </LinearLayout>
 
             <TextView
-                android:id="@+id/passwordID"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="6dp"
-                android:layout_weight="1"
-                android:text="Password"
-                android:textColor="@android:color/black"
-                android:textSize="36sp" />
-
-            <EditText
-                android:id="@+id/passwordMain"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="6dp"
-                android:layout_weight="1"
-                android:ems="10"
-                android:hint="contraseña"
-                android:inputType="textPassword"
-                android:textColor="@android:color/background_dark"
-                android:textSize="24sp" />
-
-            <ImageView
-                android:id="@+id/ingresarID"
-                android:layout_width="368dp"
-                android:layout_height="59dp"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:scaleType="fitXY"
-                app:srcCompat="@drawable/ingresar" />
-
-            <ImageView
                 android:id="@+id/registrarID"
-                android:layout_width="364dp"
-                android:layout_height="62dp"
-                android:layout_margin="8dp"
-                android:layout_weight="1.4"
-                android:scaleType="fitXY"
-                app:srcCompat="@drawable/registrarse" />
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:autoLink="phone"
+                android:clickable="true"
+                android:drawableBottom="@color/colorPrimaryDark"
+                android:text="Deseo registrarme"
+                android:textColor="@color/colorPrimaryDark" />
 
         </LinearLayout>
     </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        android:orientation="vertical">
+
+    </LinearLayout>
 
 
 </LinearLayout>

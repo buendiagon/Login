@@ -23,7 +23,8 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
 EditText usuarioMai,passwordMai;
-ImageView ingresarMai,resgistrarMai;
+Button ingresarMai;
+TextView resgistrarMai;
 ArrayList<usuario>listaU;
 
     @Override
