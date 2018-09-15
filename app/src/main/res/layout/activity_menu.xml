@@ -15,25 +15,32 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:orientation="vertical">
 
-            <ImageView
+            <Button
                 android:id="@+id/consultarID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/consultar" />
+                android:text="consultar" />
 
-            <ImageView
+            <Button
                 android:id="@+id/modificarID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/modificar" />
+                android:text="modificar" />
 
-            <ImageView
+            <Button
+                android:id="@+id/generalID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="general" />
+
+            <Button
                 android:id="@+id/eliminarID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/eliminar" />
+                android:text="eliminar" />
 
         </LinearLayout>
     </ScrollView>
